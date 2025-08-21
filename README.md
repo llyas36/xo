@@ -62,4 +62,4 @@ To get started:
 
 ## License
 
-XO is released under the 
+XO is released under the  MIT license 
