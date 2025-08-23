@@ -4,13 +4,9 @@
 > FYI: X API Price is crazy!
 ---
 
-XO is an experimental Go library designed to simplify and streamline development with the **X API**. Born out of frustration with existing solutions that felt clunky, incomplete, or hard to use, XO aims to be a modular, intuitive toolkit for developers building apps that interact with space, stream, user, and tweet data.
+XO is an experimental Go library designed to simplify development with the **X API**. Born out of frustration with existing libraries that felt clunky, incomplete, or hard to use, XO aims to be a modular, intuitive toolkit for developers building apps that interact with space, stream, user, and tweet data.
 
-##  Why XO?
-
-While building apps that rely on the X API, we noticed a gap: no library felt complete, clean, or developer-friendly enough. XO is our attempt to fix that—by offering a collection of focused, reusable functions that make working with the X API a breeze.
-
-Whether you're managing user data, streaming tweets, or exploring space-related endpoints, XO is here to help.
+Whether you're managing user data, streaming tweets, or exploring space-related endpoints, XO is might be a help.
 
 ---
 
@@ -40,12 +36,17 @@ import (
 )
 
 func main() {
-    profile, err := user.GetProfile("some_user_id")
+    req, err := httphandler.CreateGetRequest(url)
     if err != nil {
         fmt.Println("Error:", err)
         return
     }
-    fmt.Println("User Profile:", profile)
+    res, err := httphandler.GetResponse(req)
+    if err != nil{
+        fmt.Println("Error:", err)
+        return
+}
+    fmt.Println("The Response:", string(res)) 
 }
 ```
 
