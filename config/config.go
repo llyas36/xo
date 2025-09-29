@@ -7,6 +7,7 @@ import (
 )
 
 var (
+	// the tokens for the authorization
 	BearerToken string = ReturnEnv()
 	UserAgent   string = "CERN-LineMode/2.15 libwww/2.17b3"
 )

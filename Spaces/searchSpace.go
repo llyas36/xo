@@ -18,6 +18,7 @@ func SearchSpace(search_term string) (*http.Response, error) {
 	// params.Add("user.Fields", query_params[])
 	// url := search_url + params.Encode()
 
+	// sending the request to get spaces
 	httpReqeust, err := http.NewRequest("GET", search_url, nil)
 	if err != nil {
 		return nil, err

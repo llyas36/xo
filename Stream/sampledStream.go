@@ -6,6 +6,7 @@ import (
 )
 
 var (
+	// token to send the required request
 	bearer_token = os.Getenv("BEARER_TOKEN")
 	url          = "https://api.x.com/2/tweets/sample/stream"
 )

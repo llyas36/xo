@@ -9,6 +9,7 @@ var (
 	bearer_token = os.Getenv("BEARER_TOKEN")
 	space_url    = "https://api.x.com/2/spaces"
 	//optional params...
+	// needed for the request
 	query_parmas = []string{
 		"ids",
 		"SPACE_ID",
