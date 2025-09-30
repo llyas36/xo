@@ -4,13 +4,13 @@
 > FYI: X API Price is crazy!
 ---
 
-XO is an experimental Go library designed to simplify development with the **X API**. Born out of frustration with existing libraries that felt clunky, incomplete, or hard to use, XO aims to be a modular, intuitive toolkit for developers building apps that interact with space, stream, user, and tweet data.
+XO is an experimental Go library designed to simplify development with the **X API**. It's intuitive toolkit for developers building apps that interact with space, stream, user, and tweet data.
 
 Whether you're managing user data, streaming tweets, or exploring space-related endpoints, XO is might be a help.
 
 ---
 
-## ✨ Features (WIP)
+## Features (WIP)
 
 - **User Module**: Fetch, update, and manage user profiles
 - **Tweet Module**: Post, delete, and stream tweets
@@ -20,7 +20,7 @@ Whether you're managing user data, streaming tweets, or exploring space-related 
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 go get github.com/yourusername/xo
@@ -51,7 +51,7 @@ func main() {
 ```
 
 ## Status
-XO is not production-ready. Expect breaking changes, missing features, and rough edges. But also expect rapid iteration and a welcoming space for contributors.
+XO is not production-ready. Expect breaking changes, missing features, and rough edges. But welcoming space for contributors.
 
 ## Contributing
 I'm eager for your help! Whether it’s fixing bugs, adding features, improving docs, or just sharing ideas—XO thrives on community input.
